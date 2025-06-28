@@ -38,7 +38,6 @@ public class Service {
             return;
         }
 
-        // Check if room is available
         for (Booking b : bookings) {
             if (b.getRoom().getRoomNumber() == roomNumber &&
                     !(checkOut.compareTo(b.getCheckIn()) <= 0 || checkIn.compareTo(b.getCheckOut()) >= 0)) {
